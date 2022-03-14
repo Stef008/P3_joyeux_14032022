@@ -1,70 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
-.titre{
-  font-family: 'Shrikhand', cursive;
+/* HEADER */
+.titre {
+  font-family: "Shrikhand", cursive;
   text-align: center;
   box-shadow: 0px 3px 5px -2px grey;
-  padding:1rem;}
+  padding: 1rem;
+  margin-bottom: 0px;
+  position: relative;
+}
 body {
-  margin: 0px;
+  margin: 0;
 }
-/* HEADER */
-#en_tete {
+/* BARRE DE NAVIGATION */
+body {
+  font-family: "Roboto", sans-serif;
+}
+.barre__recherche {
+  background: #dfdede;
   display: flex;
+  align-items: baseline;
   justify-content: center;
-  width: 95%;
-  margin: 10px;
-}
-img {
-  width: 50%;
-}
-
-/* BARRE DE RECHERCHE */
-.barre_recherche {
-  width: 100%;
-  text-align: center;
-  background-color: rgb(226, 225, 225);
-
-}
-.recherche {
-  border: none;
-  background-color: rgb(226, 225, 225);
-  height: 50px;
-  padding-left: 10px;
-  cursor: pointer;
+  gap: 1rem;
 }
 .fa-location-dot {
-  padding-left: 40px;
+  font-size: 15px;
 }
-#explore {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px;
-  background-color: #f2f2f2;
-}
-
-p {
-  margin-top: 10px;
-}
-button {
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(#ff79da, #9356dc);
-  margin: 10px 60px 20px 60px;
-  height: 50px;
+.barre__recherche P {
+  font-weight: 500;
+  font-size: 1rem;
   cursor: pointer;
 }
-.explore {
-  color: white;
+/* SECTION RESERVATION */
+.reservation {
+  text-align: center;
+  margin: 0;
+  background: #f2f2f2;
+  padding-bottom: 3rem;
 }
+.reservation h2 {
+  padding: 3rem 1rem 0rem 1rem;
+  font-size: 1.8rem;
+  margin: 0;
+}
+.reservation p {
+  padding: 0rem 1rem 1rem 1rem;
+  color: #555;
+  font-size: 1.2rem;
+}
+.reservation__btn {
+  border-style: none;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 30px;
+  height: 3rem;
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  box-shadow: 0px 0px 10px #555;
+  transition: transform 300ms;
+}
+.reservation__btn:hover {
+  transform: scale(1.1);
+  background: white;
+  color: #9356dc;
+  cursor: pointer;
+}
+
 /* FONCTIONNEMENT */
 
-#fonctionnement {
+/*#fonctionnement {
   width: 100%;
   margin: 10px;
 }
@@ -103,4 +110,4 @@ button {
   color: black;
   margin: 0px;
   font-weight: bold;
-}
+} */
