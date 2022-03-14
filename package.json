@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "P3 openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stef008/P3_joyeux_14032022.git"
+  },
+  "author": "stephanie joyeux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stef008/P3_joyeux_14032022/issues"
+  },
+  "homepage": "https://github.com/Stef008/P3_joyeux_14032022#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}
