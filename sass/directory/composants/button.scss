@@ -1,6 +1,6 @@
         .reservation__btn {
             border-style: none;
-            background: linear-gradient(#ff79da, #9356dc);
+            background: linear-gradient(color2,color1);
             border-radius: 30px;
             height: 3rem;
             color: white;
@@ -10,7 +10,7 @@
             :hover {
               transform: scale(1.1);
               background: white;
-              color: #9356dc;
+              color:color2;
               cursor: pointer;
             }
           }
