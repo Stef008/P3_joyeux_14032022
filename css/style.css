@@ -4,22 +4,23 @@
 ::after {
   box-sizing: border-box;
 }
-/* HEADER */
-.titre {
+
+body {
+  margin: 0;
   font-family: "Shrikhand", cursive;
+}
+
+/*HEADER*/
+.titre {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   box-shadow: 0px 3px 5px -2px grey;
   padding: 1rem;
   margin-bottom: 0px;
   position: relative;
 }
-body {
-  margin: 0;
-}
+
 /* BARRE DE NAVIGATION */
-body {
-  font-family: "Roboto", sans-serif;
-}
 .barre__recherche {
   background: #dfdede;
   display: flex;
@@ -27,14 +28,15 @@ body {
   justify-content: center;
   gap: 1rem;
 }
-.fa-location-dot {
+.barre__recherche i {
   font-size: 15px;
 }
-.barre__recherche P {
+.barre__recherche i P {
   font-weight: 500;
   font-size: 1rem;
   cursor: pointer;
 }
+
 /* SECTION RESERVATION */
 .reservation {
   text-align: center;
@@ -42,19 +44,20 @@ body {
   background: #f2f2f2;
   padding-bottom: 3rem;
 }
-.reservation h2 {
+.reservationh2 {
   padding: 3rem 1rem 0rem 1rem;
   font-size: 1.8rem;
   margin: 0;
 }
-.reservation p {
+.reservationh2p {
   padding: 0rem 1rem 1rem 1rem;
   color: #555;
   font-size: 1.2rem;
 }
+
 .reservation__btn {
   border-style: none;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 30px;
   height: 3rem;
   color: white;
@@ -62,18 +65,17 @@ body {
   box-shadow: 0px 0px 10px #555;
   transition: transform 300ms;
 }
-.reservation__btn:hover {
+.reservation__btn :hover {
   transform: scale(1.1);
   background: white;
-  color: #9356dc;
+  color: color2;
   cursor: pointer;
 }
 
-/* FONCTIONNEMENT */
-
-/*#fonctionnement {
-  width: 100%;
-  margin: 10px;
+/*FONCTIONNEMENT DU SITE*/
+.fonctionnement h2 {
+  padding: 0 2rem;
+  font-family: titre;
 }
 
 .choix_un {
@@ -88,9 +90,11 @@ body {
   height: 65px;
   transition: 1s ease-in-out;
 }
+
 .choix_un :hover {
   background: #d1b3f5;
 }
+
 .un {
   border: 1px solid #9356dc;
   border-radius: 40px;
@@ -103,11 +107,15 @@ body {
   margin-left: -17px;
   font-size: 16px;
 }
+
 .fa-mobile-screen-button {
   color: #555;
 }
+
 .choix_resto {
   color: black;
   margin: 0px;
   font-weight: bold;
-} */
+}
+
+/*# sourceMappingURL=style.css.map */
