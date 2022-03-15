@@ -1,5 +1,15 @@
 /*FONCTIONNEMENT DU SITE*/
-.fonctionnement h2 {
+.fonctionnement {
     padding: 0 2rem;
-    font-family:titre;
-  }
+    font-family:$text;
+    & ol{
+      padding-left: 0;
+     li{
+      background-color:#f6f6f6;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+    margin: 1rem;
+    @include shadow;
+
+    }
+  }}

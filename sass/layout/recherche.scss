@@ -1,16 +1,17 @@
 /* BARRE DE NAVIGATION */
 .barre__recherche {
-  background: #dfdede;
+  background: $color-bg;
   display: flex;
   align-items: baseline;
   justify-content: center;
+  
   gap: 1rem;
   & i {
     font-size: 15px;
-    & P {
-      font-weight: 500;
-      font-size: 1rem;
-      cursor: pointer;
+  .barre__recherche--text{
+    border-style: hidden;
+    background-color: $color-bg;
+  } 
     }
   }
-}
+

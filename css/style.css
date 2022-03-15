@@ -1,121 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 9 |             @include shadow;
+ *   |             ^^^^^^^^^^^^^^^
+ *   '
+ *   sass\composants\button.scss 9:13  @import
+ *   sass\main.scss 5:9                root stylesheet */
 
-body {
-  margin: 0;
-  font-family: "Shrikhand", cursive;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 9 \2502              @include shadow;\d\a   \2502              ^^^^^^^^^^^^^^^\a   \2575 \a   sass\\composants\\button.scss 9:13  @import\a   sass\\main.scss 5:9                root stylesheet";
 }
-
-/*HEADER*/
-.titre {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  box-shadow: 0px 3px 5px -2px grey;
-  padding: 1rem;
-  margin-bottom: 0px;
-  position: relative;
-}
-
-/* BARRE DE NAVIGATION */
-.barre__recherche {
-  background: #dfdede;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 1rem;
-}
-.barre__recherche i {
-  font-size: 15px;
-}
-.barre__recherche i P {
-  font-weight: 500;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-/* SECTION RESERVATION */
-.reservation {
-  text-align: center;
-  margin: 0;
-  background: #f2f2f2;
-  padding-bottom: 3rem;
-}
-.reservationh2 {
-  padding: 3rem 1rem 0rem 1rem;
-  font-size: 1.8rem;
-  margin: 0;
-}
-.reservationh2p {
-  padding: 0rem 1rem 1rem 1rem;
-  color: #555;
-  font-size: 1.2rem;
-}
-
-.reservation__btn {
-  border-style: none;
-  background: linear-gradient(#FF79DA, #9356dc);
-  border-radius: 30px;
-  height: 3rem;
-  color: white;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  box-shadow: 0px 0px 10px #555;
-  transition: transform 300ms;
-}
-.reservation__btn :hover {
-  transform: scale(1.1);
-  background: white;
-  color: color2;
-  cursor: pointer;
-}
-
-/*FONCTIONNEMENT DU SITE*/
-.fonctionnement h2 {
-  padding: 0 2rem;
-  font-family: titre;
-}
-
-.choix_un {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-left: 15px;
-  box-shadow: 0px 3px 7px 1px lightgray;
-  border-radius: 20px;
-  width: 90%;
-  background-color: #f2f2f2;
-  height: 65px;
-  transition: 1s ease-in-out;
-}
-
-.choix_un :hover {
-  background: #d1b3f5;
-}
-
-.un {
-  border: 1px solid #9356dc;
-  border-radius: 40px;
-  width: 15px;
-  height: 15px;
-  background-color: #9356dc;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  margin-left: -17px;
-  font-size: 16px;
-}
-
-.fa-mobile-screen-button {
-  color: #555;
-}
-
-.choix_resto {
-  color: black;
-  margin: 0px;
-  font-weight: bold;
-}
-
-/*# sourceMappingURL=style.css.map */
