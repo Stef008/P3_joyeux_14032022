@@ -1,0 +1,49 @@
+/* TROIS BOUTONS CHOIX*/
+
+.choix {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 2rem;
+  border-radius: 20px;
+  border-style: none;
+  width: 90%;
+  background-color: #f2f2f2;
+  height: 65px;
+  transition: 200ms ease-in-out;
+  &:hover {
+    background: #d1b3f5;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .choix__nombre {
+    display: flex;
+  }
+
+  .nombre {
+    border: 1px solid #9356dc;
+    border-radius: 40px;
+    width: 2rem;
+    height: 2rem;
+    background-color: #9356dc;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-left: -1.3rem;
+    font-size: 16px;
+  }
+
+  .fa-mobile-screen-button {
+    color: #555;
+    &:hover{
+        color:$color1;
+    }
+  }
+
+  .choix_resto {
+    color: black;
+    margin: 0px;
+    font-weight: bold;
+  }
+}

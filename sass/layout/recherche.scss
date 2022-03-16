@@ -4,14 +4,9 @@
   display: flex;
   align-items: baseline;
   justify-content: center;
-  
+
   gap: 1rem;
   & i {
     font-size: 15px;
-  .barre__recherche--text{
-    border-style: hidden;
-    background-color: $color-bg;
-  } 
-    }
   }
-
+}
