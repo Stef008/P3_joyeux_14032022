@@ -9,3 +9,14 @@ body {
   margin: 0;
   font-family:$text;
 }
+a{
+  text-decoration: none;
+  color:black;
+}
+img{
+  object-fit: cover;
+  object-position: center;
+  width: 95%;
+  border-radius: 1rem 1rem 0rem 0rem;
+  height: 10rem;
+}

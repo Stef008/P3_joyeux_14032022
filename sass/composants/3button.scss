@@ -1,49 +1,47 @@
 /* TROIS BOUTONS CHOIX*/
-
+.fonctionnement h2 {
+  margin-left: 1rem;
+}
+.fa-solid {
+  font-size: 20px;
+}
+.nombre {
+  border: 1px solid $color1;
+  border-radius: 40px;
+  width: 2rem;
+  height: 2rem;
+  background-color: $color1;
+  color: $color4;
+  text-align: center;
+  padding-top: 0.4rem;
+  margin-left: -1rem;
+  font-size: 16px;
+}
 .choix {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  margin: 2rem;
-  border-radius: 20px;
-  border-style: none;
-  width: 90%;
-  background-color: #f2f2f2;
-  height: 65px;
-  transition: 200ms ease-in-out;
-  &:hover {
-    background: #d1b3f5;
-    opacity: 0.5;
-    cursor: pointer;
-  }
-
-  .choix__nombre {
+  flex-direction: column;
+  margin-bottom: 5rem;
+  padding: 0;
+  .choix__btn {
     display: flex;
-  }
-
-  .nombre {
-    border: 1px solid #9356dc;
-    border-radius: 40px;
-    width: 2rem;
-    height: 2rem;
-    background-color: #9356dc;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin-left: -1.3rem;
-    font-size: 16px;
-  }
-
-  .fa-mobile-screen-button {
-    color: #555;
-    &:hover{
-        color:$color1;
+    align-items: center;
+    background-color: $bg-btn;
+    gap: 20px;
+    margin: 2rem 0 0 1.4rem;
+    border-radius: 20px;
+    width: 90%;
+    height: 65px;
+    @include shadow;
+    transition: 400ms ease-in-out;
+    &:hover {
+      background: $bg-btn-hover;
+      cursor: pointer;
+      & .nombre {
+        opacity: 3;
+      }
+      & .fa-solid {
+        color: $color1;
+      }
     }
-  }
-
-  .choix_resto {
-    color: black;
-    margin: 0px;
-    font-weight: bold;
   }
 }

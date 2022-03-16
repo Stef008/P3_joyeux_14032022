@@ -14,55 +14,118 @@
     <title>ohmyfood</title>
   </head>
   <body>
+
     <!-- HEADER -->
+
     <header>
       <h1 class="logo">ohmyfood</h1>
     </header>
-    <!-- BARRE DE NAVIGATION -->
-    <nav class="recherche">
-      <form method="post" action="#">
-        <div class="barre__recherche">
-          <i class="fa-solid fa-location-dot"></i>
-          <p>Paris, Belleville</p>
-        </div>
-      </form>
-    </nav>
-    <!--SECTION RESERVATION  -->
-    <section class="reservation">
-      <h2>Réservez le menu qui vous convient</h2>
-      <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
-      <button class="reservation__btn">Explorer nos restaurants</button>
-    </section>
-    <!-- FONCTIONNEMENT DU SITE-->
-    <section class="fonctionnement">
-      <h2>Fonctionnement</h2>
-      <!-- <ol>
-        <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
-        <li><i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
-        <li><i class="fa-solid fa-store"></i>Déguster sur place</li>
-      </ol> -->
-       <button class="choix">
-        <span class="nombre">1</span>
-        <div class="choix__nombre">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          <p class="choix__nombre--texte">Choisissez un restaurant</p>
-        </div>
-      </button>
-      <button class="choix">
-        <span class="nombre">2</span>
-        <div class="choix__nombre">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          <p class="choix__nombre--texte">Composez votre menu</p>
-        </div>
-      </button>
-      <button class="choix">
-        <span class="nombre">3</span>
-        <div class="choix__nombre">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          <p class="choix__nombre--texte">Déguster sur place</p>
-        </div>
-      </button>
+    <main id="page-acceuil">
 
-    </section>
+      <!-- BARRE DE NAVIGATION -->
+
+      <nav class="recherche">
+        <form method="post" action="#">
+          <div class="barre__recherche">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Paris, Belleville</p>
+          </div>
+        </form>
+      </nav>
+
+      <!--SECTION RESERVATION  -->
+
+      <section class="reservation">
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>
+          Découvrez des restaurants d'exception, selectionnés par nos soins.
+        </p>
+        <button class="reservation__btn">Explorer nos restaurants</button>
+      </section>
+
+      <!--BOUTONS DE FONCTIONNEMENT DU SITE-->
+
+      <section class="fonctionnement">
+        <h2>Fonctionnement</h2>
+        <ul class="choix">
+          <li class="choix__btn">
+            <span class="nombre">1</span>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Choisissez un restaurant</p>
+          </li>
+          <li class="choix__btn">
+            <span class="nombre">2</span>
+            <i class="fa-solid fa-list-ul"></i>
+            <p>Composez votre menu</p>
+          </li>
+          <li class="choix__btn">
+            <span class="nombre">3</span>
+            <i class="fa-solid fa-store"></i>
+            <p>Déguster sur place</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CARTES DES RESTAURANTS -->
+
+      <section class="restaurants">
+        <h2>Restaurants</h2>
+      <article class="restaurants__choix">
+        <a href="#" class="goût">
+          <div class="resto__carte">
+            <span>Nouveau</span>
+            <img src="photos/La palette du goût.jpg" alt="La palette du goût">
+          </div>
+          <div class="resto__carte--ville">
+            <h3>La palette du goût
+              <p>Ménilmontant</p>
+            </h3>
+            
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </a>
+      </article>
+      <article class="restaurants__choix">
+        <a href="#" class="goût">
+          <div class="resto__carte">
+            <span>Nouveau</span>
+            <img src="photos/La note enchantée.jpg" alt="La note enchantée">
+          </div>
+          <div class="resto__carte--ville">
+            <h3>La note enchantée
+              <p>Charonne</p>
+            </h3>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </a>
+      </article>
+      <article class="restaurants__choix">
+        <a href="#" class="goût">
+          <div class="resto__carte">
+            <img src="photos/à la française.jpg" alt="A la française">
+          </div>
+          <div class="resto__carte--ville">
+            <h3>A la française
+              <p>Cité rouge</p>
+            </h3>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </a>
+      </article>
+      <article class="restaurants__choix">
+        <a href="#" class="goût">
+          <div class="resto__carte">
+            <img src="photos/Le délice des sens.jpg" alt="Le délice des sens">
+          </div>
+          <div class="resto__carte--ville">
+            <h3>Le délice des sens
+              <p>Folie-Méricourt</p>
+            </h3>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </a>
+      </article>
+      </section>
+    </main>
   </body>
 </html>

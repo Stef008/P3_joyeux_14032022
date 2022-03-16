@@ -2,7 +2,7 @@
 .reservation {
   text-align: center;
   margin: 0;
-  background: #f2f2f2;
+  background: $bg-btn;
   padding-bottom: 3rem;
   & h2 {
     padding: 3rem 1rem 0rem 1rem;
@@ -10,8 +10,7 @@
     margin: 0;
     & p {
       padding: 0rem 1rem 1rem 1rem;
-      color: #555;
-      font-size: 1.2rem;
+           font-size: 1.2rem;
     }
   }
 }
