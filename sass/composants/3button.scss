@@ -32,15 +32,16 @@
     width: 90%;
     height: 65px;
     @include shadow;
-    transition: 400ms ease-in-out;
+    transition: 600ms ease-in-out;
     &:hover {
       background: $bg-btn-hover;
       cursor: pointer;
       & .nombre {
-        opacity: 3;
+        opacity: 4;
       }
       & .fa-solid {
         color: $color1;
+        cursor: pointer;
       }
     }
   }
