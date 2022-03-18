@@ -43,7 +43,7 @@ h3 {
 
 .reservation__btn {
   border-style: none;
-  background: linear-gradient(#FF79DA, #9356dc);
+  background: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px;
   height: 3rem;
   color: white;
@@ -128,7 +128,7 @@ h3 {
   transition: 600ms ease-in-out;
 }
 .choix .choix__btn:hover {
-  background: #e9dafb;
+  background-color: #e9dafb;
   cursor: pointer;
 }
 .choix .choix__btn:hover .nombre {
@@ -168,7 +168,7 @@ h3 {
   position: absolute;
   width: 6rem;
   height: 2rem;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #278870;
   display: grid;
   place-items: center;
@@ -214,21 +214,24 @@ h3 {
   right: 1rem;
   top: 30%;
 }
+.cartes .carte__ville .fas {
+  opacity: 0;
+}
 
-.carte__ville i:hover {
-  animation: coeur 3s forwards;
+.carte__ville .fas:hover {
+  animation: coeur 500ms forwards;
 }
 
 @keyframes coeur {
   from {
     opacity: 0;
-    font-weight: 600;
-    color: #9356dc;
   }
   to {
     opacity: 1;
-    color: #9356dc;
-    font-weight: 600;
+    color: transparent;
+    background-image: linear-gradient(to bottom, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 }
 /* FOOTER*/
@@ -252,7 +255,7 @@ footer h4 {
 }
 
 .items {
-  margin: 0rem 0rem 0rem 0rem;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

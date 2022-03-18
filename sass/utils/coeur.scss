@@ -1,12 +1,14 @@
 @keyframes coeur {
   from {
     opacity: 0;
-    font-weight: 600;
-    color: $color1;
+    // font-weight: 600;
+    // color: $color1;
   }
   to {
     opacity: 1;
-    color: $color1;
-    font-weight: 600;
+    color: transparent;
+    background-image: linear-gradient(to bottom, $color1, $color2);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 }

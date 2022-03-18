@@ -61,11 +61,14 @@
         right: 1rem;
         top: 30%;
       }
+      .fas {
+        opacity: 0;
+      }
     }
   }
 }
-.carte__ville i {
+.carte__ville .fas {
   &:hover {
-    animation: coeur 3s forwards;
+    animation: coeur 500ms forwards;
   }
 }

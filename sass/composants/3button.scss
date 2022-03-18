@@ -12,7 +12,6 @@
     }
   }
 }
-
 .fa-solid {
   font-size: 20px;
 }
@@ -45,7 +44,7 @@
     @include shadow;
     transition: 600ms ease-in-out;
     &:hover {
-      background: $bg-btn-hover;
+      background-color: #e9dafb;
       cursor: pointer;
       & .nombre {
         opacity: 4;
