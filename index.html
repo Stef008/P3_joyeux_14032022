@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 
     <title>ohmyfood</title>
   </head>
@@ -66,11 +66,14 @@
 
       <!-- CARTES DES RESTAURANTS -->
 
-      <section class="cartes">
+       <section class="cartes">
         <h2>Restaurants</h2>
-        <article class="cartes__restaurants">
+        <!--<article class="cartes__restaurants">
           <a href="#" class="carte">
-            <div class="carte__resto"></div>
+            <span>Nouveau</span>
+            <div class="carte__img">
+              <img src="assets/resto1.jpg" alt="La palette du goût"/>
+            </div>
             <div class="carte__ville">
               <h3>
                 La palette du goût
@@ -80,12 +83,13 @@
             </div>
           </a>
         </article>
-        <article class="restaurants__choix">
-          <a href="#" class="nouveau">
-            <div class="resto__carte">
+        <article class="cartes__restaurants">
+          <a href="#"class="carte">
+            <span>Nouveau</span>
+            <div class="carte__img">
               <img src="assets/resto2.jpg" alt="La note enchantée" />
             </div>
-            <div class="resto__carte--ville">
+            <div class="carte__ville">
               <h3>
                 La note enchantée
                 <p>Charonne</p>
@@ -94,12 +98,12 @@
             </div>
           </a>
         </article>
-        <article class="restaurants__choix">
+        <article class="cartes__restaurants">
           <a href="#">
-            <div class="resto__carte">
+            <div class="carte__img">
               <img src="assets/resto3.jpg" alt="A la française" />
             </div>
-            <div class="resto__carte--ville">
+            <div class="carte__ville">
               <h3>
                 A la française
                 <p>Cité rouge</p>
@@ -108,15 +112,15 @@
             </div>
             </a>
         </article>
-        <article class="restaurants__choix">
+        <article class="cartes__restaurants">
           <a href="#">
-            <div class="resto__carte">
+            <div class="carte__img">
               <img
                 src="assets/resto4.jpg"
                 alt="Le délice des sens"
               />
             </div>
-            <div class="resto__carte--ville">
+            <div class="carte__ville">
               <h3>
                 Le délice des sens
                 <p>Folie-Méricourt</p>
@@ -125,8 +129,21 @@
             </div>
           </a>
         </article>
-      </section>
-
+      </section> -->
+      <div class="cartes__restaurants">
+      <a href="#" class="carte nouveau">
+        <div class="carte__img carte__img--1 "></div>
+        <div class="carte__ville"></div>
+      </a><a href="#" class="carte nouveau">
+        <div class="carte__img carte__img--2"></div>
+        <div class="carte__ville"></div>
+      </a><a href="#" class="carte">
+        <div class="carte__img carte__img--3"></div>
+        <div class="carte__ville"></div>
+      </a><a href="#" class="carte">
+        <div class="carte__img carte__img--4"></div>
+        <div class="carte__ville"></div>
+      </a></div></section>
       <!-- FOOTER -->
 
       <footer>

@@ -1,53 +1,64 @@
 /*SECTION RESTAURANTS*/
-.restaurants {
+.cartes {
   background-color: $bg-btn;
-  padding: 0.1rem 0rem 3rem 1rem;
+  padding: 2rem 1rem 3rem 1rem;
   .cartes__restaurants{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     padding-bottom: 1rem;
-  }
+    @media(max-width: 768px){
+      grid-template-columns: repeat(1, 1fr);
+  }}
+   
+.carte{
+&__img {
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
 }
-.carte__resto{
-  background-image: url("../../assets/resto1.jpg");
-}
-// .resto__carte {
-//   height: 10rem;
-// }
-// .resto__carte span {
-//   position: absolute;
-//   right: 1rem;
-//   background: $color3;
-//   margin: 1rem;
-//   color: $color5;
-//   padding: 0.3rem 0.8rem 0.3rem 0.8rem;
-//   border-radius: 0.2rem;
-//   font-weight: 500;
-// }
-// .resto__carte--ville {
-//   display: flex;
-//   justify-content: space-between;
-//   border-radius: 0rem 0rem 1rem 1rem;
-//   background-color: $color4;
-//   width: 95%;
-//   padding-left: 1rem;
-//   & h3 {
-//     margin-top: -5px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: baseline;
-//     margin-bottom: 0;
-//     padding-top: 1rem;
-//     & p {
-//       margin: 0rem 0rem 1rem 0rem;
-//       font-weight: 100;
-//     }
-//   }
-// }
 
-// .resto__carte--ville i {
-//   padding: 1.3rem 2rem 0rem 2rem;
-//   font-size: 1.6rem;
-//   &:hover{
-//    animation: coeur 3s forwards;
+    @for $i from 1 through 4 {
+      &__img--#{$i} {
+        background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto#{$i}.jpg);
+      }
+    }}}
 
-//       }
-// }
+
+//  .carte span {
+//    position: absolute;
+//    right: 1rem;
+//    background: $color3;
+//    margin: 1rem;
+//    color: $color5;
+//    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+//    border-radius: 0.2rem;
+//    font-weight: 500;
+//  }
+//  .carte__ville {
+//    display: flex;
+//    justify-content: space-between;
+//    border-radius: 0rem 0rem 1rem 1rem;
+//    background-color: $color4;
+//    width: 95%;
+//    padding-left: 1rem;
+//    & h3 {
+//      margin-top: -5px;
+//      display: flex;
+//      flex-direction: column;
+//      align-items: baseline;
+//      margin-bottom: 0;
+//      padding-top: 1rem;
+//      & p {
+//        margin: 0rem 0rem 1rem 0rem;
+//        font-weight: 100;
+//      }
+//    }
+//  }
+
+//  .carte__ville i {
+//    padding: 1.3rem 2rem 0rem 2rem;
+//    font-size: 1.6rem;
+//    &:hover{
+//     animation: coeur 3s forwards;}
