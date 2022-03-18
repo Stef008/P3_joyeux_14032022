@@ -183,16 +183,16 @@ h3 {
   border-radius: 1rem 1rem 0 0;
 }
 .cartes .carte__img--1 {
-  background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto1.jpg);
+  background-image: url(../assets/resto1.jpg);
 }
 .cartes .carte__img--2 {
-  background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto2.jpg);
+  background-image: url(../assets/resto2.jpg);
 }
 .cartes .carte__img--3 {
-  background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto3.jpg);
+  background-image: url(../assets/resto3.jpg);
 }
 .cartes .carte__img--4 {
-  background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto4.jpg);
+  background-image: url(../assets/resto4.jpg);
 }
 .cartes .carte__ville {
   position: relative;

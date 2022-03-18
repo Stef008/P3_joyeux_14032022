@@ -39,7 +39,7 @@
     }
     @for $i from 1 through 4 {
       &__img--#{$i} {
-        background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto#{$i}.jpg);
+        background-image: url(../assets/resto#{$i}.jpg);
       }
     }
     &__ville {
