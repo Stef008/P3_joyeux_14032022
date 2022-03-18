@@ -2,6 +2,17 @@
 .fonctionnement h2 {
   margin: 2rem;
 }
+.fonctionnement {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    & ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
 .fa-solid {
   font-size: 20px;
 }
@@ -20,14 +31,14 @@
 .choix {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   padding: 0;
   .choix__btn {
     display: flex;
     align-items: center;
     background-color: $bg-btn;
     gap: 20px;
-    margin: 0rem 2rem 2REM 2rem;    
+    margin: 0rem 2rem 2rem 2rem;
     border-radius: 20px;
     width: 85%;
     height: 65px;

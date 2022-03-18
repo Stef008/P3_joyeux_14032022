@@ -10,58 +10,62 @@
     @media (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
     }
-    
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .nouveau {
+      position: relative;
+      &::before {
+        content: "Nouveau";
+        position: absolute;
+        width: 6rem;
+        height: 2rem;
+        background-color: $color3;
+        color: darken($color: $color3, $amount: 40%);
+        display: grid;
+        place-items: center;
+        right: 1rem;
+        top: 1rem;
+        border-radius: 3px;
+      }
+    }
   }
-
   .carte {
     &__img {
-      height: 15rem;
+      height: 12rem;
       background-size: cover;
       background-position: center;
-      border-radius: 1rem;
+      border-radius: 1rem 1rem 0 0;
     }
-
     @for $i from 1 through 4 {
       &__img--#{$i} {
         background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto#{$i}.jpg);
       }
     }
+    &__ville {
+      position: relative;
+      background-color: $color4;
+      border-radius: 0 0 1rem 1rem;
+      padding-bottom: 1rem;
+      h3,
+      p {
+        margin: 0;
+        padding-left: 1rem;
+      }
+      h3 {
+        padding-top: 1rem;
+      }
+      i {
+        font-size: 1.8rem;
+        position: absolute;
+        right: 1rem;
+        top: 30%;
+      }
+    }
   }
 }
-
-//  .carte span {
-//    position: absolute;
-//    right: 1rem;
-//    background: $color3;
-//    margin: 1rem;
-//    color: $color5;
-//    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
-//    border-radius: 0.2rem;
-//    font-weight: 500;
-//  }
-//  .carte__ville {
-//    display: flex;
-//    justify-content: space-between;
-//    border-radius: 0rem 0rem 1rem 1rem;
-//    background-color: $color4;
-//    width: 95%;
-//    padding-left: 1rem;
-//    & h3 {
-//      margin-top: -5px;
-//      display: flex;
-//      flex-direction: column;
-//      align-items: baseline;
-//      margin-bottom: 0;
-//      padding-top: 1rem;
-//      & p {
-//        margin: 0rem 0rem 1rem 0rem;
-//        font-weight: 100;
-//      }
-//    }
-//  }
-
-//  .carte__ville i {
-//    padding: 1.3rem 2rem 0rem 2rem;
-//    font-size: 1.6rem;
-//    &:hover{
-//     animation: coeur 3s forwards;}
+.carte__ville i {
+  &:hover {
+    animation: coeur 3s forwards;
+  }
+}

@@ -15,6 +15,10 @@ a {
   color: inherit;
 }
 
+h3 {
+  margin: 0;
+}
+
 /*HEADER*/
 .logo {
   font-family: "Shrikhand", cursive;
@@ -77,6 +81,17 @@ a {
   margin: 2rem;
 }
 
+@media (min-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+  }
+  .fonctionnement ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .fa-solid {
   font-size: 20px;
 }
@@ -97,7 +112,7 @@ a {
 .choix {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   padding: 0;
 }
 .choix .choix__btn {
@@ -105,7 +120,7 @@ a {
   align-items: center;
   background-color: #f2f2f2;
   gap: 20px;
-  margin: 0rem 2rem 2REM 2rem;
+  margin: 0rem 2rem 2rem 2rem;
   border-radius: 20px;
   width: 85%;
   height: 65px;
@@ -140,11 +155,32 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (min-width: 992px) {
+  .cartes .cartes__restaurants {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.cartes .cartes__restaurants .nouveau {
+  position: relative;
+}
+.cartes .cartes__restaurants .nouveau::before {
+  content: "Nouveau";
+  position: absolute;
+  width: 6rem;
+  height: 2rem;
+  background-color: #99E2D0;
+  color: #278870;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 3px;
+}
 .cartes .carte__img {
-  height: 15rem;
+  height: 12rem;
   background-size: cover;
   background-position: center;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 .cartes .carte__img--1 {
   background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto1.jpg);
@@ -157,6 +193,30 @@ a {
 }
 .cartes .carte__img--4 {
   background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto4.jpg);
+}
+.cartes .carte__ville {
+  position: relative;
+  background-color: #fff;
+  border-radius: 0 0 1rem 1rem;
+  padding-bottom: 1rem;
+}
+.cartes .carte__ville h3,
+.cartes .carte__ville p {
+  margin: 0;
+  padding-left: 1rem;
+}
+.cartes .carte__ville h3 {
+  padding-top: 1rem;
+}
+.cartes .carte__ville i {
+  font-size: 1.8rem;
+  position: absolute;
+  right: 1rem;
+  top: 30%;
+}
+
+.carte__ville i:hover {
+  animation: coeur 3s forwards;
 }
 
 @keyframes coeur {
