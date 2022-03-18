@@ -2,29 +2,32 @@
 .cartes {
   background-color: $bg-btn;
   padding: 2rem 1rem 3rem 1rem;
-  .cartes__restaurants{
+  .cartes__restaurants {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     padding-bottom: 1rem;
-    @media(max-width: 768px){
+    @media (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
-  }}
-   
-.carte{
-&__img {
-  height: 15rem;
-  background-size: cover;
-  background-position: center;
-  border-radius: 1rem;
-}
+    }
+    
+  }
+
+  .carte {
+    &__img {
+      height: 15rem;
+      background-size: cover;
+      background-position: center;
+      border-radius: 1rem;
+    }
 
     @for $i from 1 through 4 {
       &__img--#{$i} {
         background-image: url(c:Users/Public/Documents/P3_stephanie_joyeux/assets/resto#{$i}.jpg);
       }
-    }}}
-
+    }
+  }
+}
 
 //  .carte span {
 //    position: absolute;
