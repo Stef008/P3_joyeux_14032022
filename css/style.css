@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 *,
 ::before,
@@ -260,6 +261,50 @@ footer h4 {
 
 .items {
   margin: 0;
+}
+
+/*MENU LA PALETTE DU GOÛT*/
+header {
+  position: relative;
+}
+header .logo {
+  box-shadow: none;
+  padding: 1rem;
+}
+header i {
+  position: absolute;
+  top: 15%;
+  font-size: x-large;
+  padding-left: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu {
+  position: relative;
+  margin: 1rem;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+}
+
+.menu i {
+  font-weight: 400;
+  font-size: 1.8rem;
+  position: absolute;
+  right: 1rem;
+  top: 30%;
+  right: 0;
+  top: 0;
+}
+.menu i:hover {
+  font-weight: 600;
+  animation: coeur 800ms forwards;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
