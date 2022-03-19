@@ -56,19 +56,16 @@
         padding-top: 1rem;
       }
       i {
-        font-size: 1.8rem;
-        position: absolute;
-        right: 1rem;
-        top: 30%;
-      }
-      .fas {
-        opacity: 0;
+        @include coeur;
       }
     }
-  }
-}
-.carte__ville .fas {
-  &:hover {
-    animation: coeur 500ms forwards;
+    .fas {
+      opacity: 0;
+    }
+    .carte__ville .fas {
+      &:hover {
+        animation: coeur 800ms forwards;
+      }
+    }
   }
 }
