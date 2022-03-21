@@ -1,0 +1,74 @@
+/*MENU La palette du gout*/
+
+.menu {
+	font-family: $text;
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 1300px) {
+		flex-direction: inherit;
+		justify-content: space-around;
+		min-width: 400px;
+	}
+	& h3 {
+		margin: 1rem;
+		font-size: 20px;
+		font-weight: 400;
+	}
+}
+
+.liste {
+	border-radius: 1rem;
+	background-color: $color4;
+	display: flex;
+	margin-bottom: 1rem;
+	overflow: hidden;
+	@include shadow;
+	&:hover .prix__ok {
+		cursor: pointer;
+		margin-right: 0;
+	}
+	&__menu {
+		padding: 1rem;
+	}
+	& h4,
+	p {
+		margin: 0;
+		font-size: 16px;
+	}
+	& .prix {
+		padding: 1rem;
+		font-weight: bold;
+		margin-left: auto;
+		display: flex;
+		align-items: flex-end;
+	}
+	.prix__ok {
+		display: flex;
+		align-items: flex-end;
+		margin-right: -4rem;
+		width: 4rem;
+		padding: 1rem;
+		background: $color3;
+		border-radius: 0 1rem 1rem 0;
+		color: $color4;
+		& i {
+			font-size: 25px;
+		}
+	}
+}
+
+/*Boutton commander*/
+
+.menus {
+	padding-bottom: 5rem;
+	.cmd {
+		font-family: $text;
+		font-size: 16px;
+		text-align: center;
+		margin-top: 4rem;
+	}
+	& button {
+		@include btn;
+		padding: 1rem 3rem;
+	}
+}
