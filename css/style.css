@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 *,
 ::before,
@@ -10,7 +9,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 10px auto;
 }
 
@@ -247,7 +246,7 @@ a {
     transform: rotate(360deg);
   }
   to {
-    tarnsform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes liste {
@@ -282,7 +281,7 @@ footer h4 {
   margin: 0;
 }
 
-/*MENU LA PALETTE DU GOÛT*/
+/*MENU DES QUATRE RESTAURANTS*/
 header {
   position: relative;
 }
@@ -295,6 +294,9 @@ header i {
   top: 5%;
   font-size: 32px;
   padding-left: 1rem;
+}
+header i:hover {
+  transform: scale(1.3);
 }
 
 img {
@@ -332,7 +334,7 @@ img {
   cursor: pointer;
 }
 
-/*MENU La palette du gout*/
+/*MENU DES QUATRE RESTAURANTS*/
 .menu {
   font-family: "Roboto", sans-serif;
 }
@@ -362,16 +364,19 @@ img {
     width: 320px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .menu__carte--liste {
     flex-direction: column;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .menu {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
+  }
+  .menu .liste {
+    width: 400px;
   }
 }
 
@@ -394,6 +399,9 @@ img {
 }
 .liste:nth-child(3) {
   animation-delay: 600ms;
+}
+.liste:nth-child(4) {
+  animation-delay: 800ms;
 }
 .liste:hover .prix__ok {
   margin-right: 0;

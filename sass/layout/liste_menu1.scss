@@ -1,4 +1,4 @@
-/*MENU La palette du gout*/
+/*MENU DES QUATRE RESTAURANTS*/
 
 .menu {
 	font-family: $text;
@@ -27,19 +27,22 @@
 				width: 320px;
 			}
 		}
-		@media (min-width: 992px) {
-			flex-direction: column;
-		}
+		 @media (min-width: 1200px) {
+		 	flex-direction: column;
+		 }
 	}
-	@media (min-width: 992px) {
+	@media (min-width: 1200px) {
 		display: flex;
 		justify-content: space-around;
 		gap: 1rem;
+		& .liste {
+			width: 400px;
+		}
 	}
 }
 
 .liste {
-	@for $i from 1 through 3 {
+	@for $i from 1 through 4 {
 		&:nth-child(#{$i}) {
 			animation-delay: #{$i* (200ms)};
 		}

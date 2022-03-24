@@ -1,4 +1,4 @@
-/*MENU LA PALETTE DU GOÛT*/
+/*MENU DES QUATRE RESTAURANTS*/
 
 header {
 	position: relative;
@@ -11,6 +11,9 @@ header {
 		top: 5%;
 		font-size: 32px;
 		padding-left: 1rem;
+		&:hover {
+			transform: scale(1.3);
+		}
 	}
 }
 
