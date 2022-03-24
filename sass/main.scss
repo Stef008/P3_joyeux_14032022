@@ -1,13 +1,13 @@
 @import "base/typographie";
 @import "base/base";
-@import "layout/header";
+@import "utils/keyframes";
 @import "utils/mixin";
+@import "layout/header";
 @import "layout/recherche";
 @import "composants/button1";
 @import "layout/reservation";
 @import "composants/3button";
 @import "layout/restaurants";
-@import "utils/keyframes";
 @import "layout/footer";
 @import "layout/header_menu1.scss";
 @import "layout/liste_menu1.scss";
