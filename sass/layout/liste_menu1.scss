@@ -2,38 +2,74 @@
 
 .menu {
 	font-family: $text;
-	display: flex;
-	flex-direction: column;
-	@media (min-width: 1300px) {
-		flex-direction: inherit;
-		justify-content: space-around;
-		min-width: 400px;
-	}
 	& h3 {
+		text-transform: uppercase;
 		margin: 1rem;
 		font-size: 20px;
 		font-weight: 400;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: $color3;
+			width: 3rem;
+			height: 0.20rem;
+			top: 1.5rem;
+			left: 0;
+		}
+	}
+	&__carte--liste {
+		@media (min-width: 768px) {
+			display: flex;
+			gap: 0.5rem;
+			justify-content: space-around;
+			& .liste {
+				width: 320px;
+			}
+		}
+		@media (min-width: 992px) {
+			flex-direction: column;
+		}
+	}
+	@media (min-width: 992px) {
+		display: flex;
+		justify-content: space-around;
+		gap: 1rem;
 	}
 }
 
 .liste {
+	@for $i from 1 through 3 {
+		&:nth-child(#{$i}) {
+			animation-delay: #{$i* (200ms)};
+		}
+	}
 	border-radius: 1rem;
 	background-color: $color4;
 	display: flex;
 	margin-bottom: 1rem;
 	overflow: hidden;
+	cursor: pointer;
 	@include shadow;
+	animation: liste 1s;
+	animation-fill-mode: both;
 	&:hover .prix__ok {
-		cursor: pointer;
 		margin-right: 0;
+		i {
+			animation: ok 800ms;
+		}
 	}
 	&__menu {
 		padding: 1rem;
+		overflow: hidden;
 	}
 	& h4,
 	p {
 		margin: 0;
 		font-size: 16px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 	& .prix {
 		padding: 1rem;
@@ -41,16 +77,18 @@
 		margin-left: auto;
 		display: flex;
 		align-items: flex-end;
+		flex-shrink: 0;
 	}
 	.prix__ok {
-		display: flex;
-		align-items: flex-end;
+		display: grid;
+		place-items: center;
 		margin-right: -4rem;
 		width: 4rem;
-		padding: 1rem;
 		background: $color3;
 		border-radius: 0 1rem 1rem 0;
 		color: $color4;
+		transition: all 400ms;
+		flex-shrink: 0;
 		& i {
 			font-size: 25px;
 		}
@@ -61,6 +99,9 @@
 
 .menus {
 	padding-bottom: 5rem;
+	@media (min-width: 992px) {
+		padding-left: 1rem;
+	}
 	.cmd {
 		font-family: $text;
 		font-size: 16px;

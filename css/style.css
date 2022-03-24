@@ -9,6 +9,9 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto;
 }
 
 a {
@@ -239,6 +242,22 @@ a {
     -webkit-background-clip: text;
   }
 }
+@keyframes ok {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    tarnsform: rotate(0deg);
+  }
+}
+@keyframes liste {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 /* FOOTER*/
 footer {
   background-color: #555;
@@ -316,20 +335,44 @@ img {
 /*MENU La palette du gout*/
 .menu {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 1300px) {
-  .menu {
-    flex-direction: inherit;
-    justify-content: space-around;
-    min-width: 400px;
-  }
 }
 .menu h3 {
+  text-transform: uppercase;
   margin: 1rem;
   font-size: 20px;
   font-weight: 400;
+  position: relative;
+}
+.menu h3::after {
+  content: "";
+  position: absolute;
+  background-color: #99e2d0;
+  width: 3rem;
+  height: 0.2rem;
+  top: 1.5rem;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .menu__carte--liste {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-around;
+  }
+  .menu__carte--liste .liste {
+    width: 320px;
+  }
+}
+@media (min-width: 992px) {
+  .menu__carte--liste {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
 }
 
 .liste {
@@ -338,19 +381,37 @@ img {
   display: flex;
   margin-bottom: 1rem;
   overflow: hidden;
+  cursor: pointer;
   box-shadow: 1px 3px 12px -5px #555;
+  animation: liste 1s;
+  animation-fill-mode: both;
+}
+.liste:nth-child(1) {
+  animation-delay: 200ms;
+}
+.liste:nth-child(2) {
+  animation-delay: 400ms;
+}
+.liste:nth-child(3) {
+  animation-delay: 600ms;
 }
 .liste:hover .prix__ok {
-  cursor: pointer;
   margin-right: 0;
+}
+.liste:hover .prix__ok i {
+  animation: ok 800ms;
 }
 .liste__menu {
   padding: 1rem;
+  overflow: hidden;
 }
 .liste h4,
 .liste p {
   margin: 0;
   font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .liste .prix {
   padding: 1rem;
@@ -358,16 +419,18 @@ img {
   margin-left: auto;
   display: flex;
   align-items: flex-end;
+  flex-shrink: 0;
 }
 .liste .prix__ok {
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  place-items: center;
   margin-right: -4rem;
   width: 4rem;
-  padding: 1rem;
   background: #99e2d0;
   border-radius: 0 1rem 1rem 0;
   color: #fff;
+  transition: all 400ms;
+  flex-shrink: 0;
 }
 .liste .prix__ok i {
   font-size: 25px;
@@ -376,6 +439,11 @@ img {
 /*Boutton commander*/
 .menus {
   padding-bottom: 5rem;
+}
+@media (min-width: 992px) {
+  .menus {
+    padding-left: 1rem;
+  }
 }
 .menus .cmd {
   font-family: "Roboto", sans-serif;

@@ -1,12 +1,28 @@
 @keyframes coeur {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    color: transparent;
-    background-image: linear-gradient(to bottom, $color1, $color2);
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		color: transparent;
+		background-image: linear-gradient(to bottom, $color1, $color2);
+		background-clip: text;
+		-webkit-background-clip: text;
+	}
+}
+@keyframes ok {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		tarnsform: rotate(0deg);
+	}
+}
+@keyframes liste {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
 }

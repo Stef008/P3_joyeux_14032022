@@ -8,6 +8,9 @@
 body {
   margin: 0;
   font-family: $text;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto;
 }
 a {
   text-decoration: none;
