@@ -83,20 +83,23 @@ a {
   position: fixed;
   inset: 0;
   z-index: 1;
-  opacity: 0.9;
   display: grid;
   place-items: center;
-  animation: loading 300ms 2s forwards;
+  animation: loading 300ms 3s forwards;
   transform-origin: bottom;
 }
 .spinner::after {
-  content: "";
-  width: 10rem;
-  height: 10rem;
+  content: "ohmyfood";
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+  width: 8rem;
+  height: 8rem;
   border-right: 1rem solid #ff79da;
-  border-left: 1rem solid #99e2d0;
+  border-left: 1rem solid #9356dc;
   border-radius: 50%;
-  animation: spinner 1s infinite ease-in-out;
+  display: grid;
+  place-content: center;
+  animation: spinner 2s ease-in-out;
 }
 
 /* BARRE DE NAVIGATION */
