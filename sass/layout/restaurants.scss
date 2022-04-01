@@ -4,11 +4,11 @@
   padding: 2rem 1rem 3rem 1rem;
   .cartes__restaurants {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     padding-bottom: 1rem;
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(1, 1fr);
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
     }
     @media (min-width: 992px) {
       grid-template-columns: repeat(4, 1fr);
